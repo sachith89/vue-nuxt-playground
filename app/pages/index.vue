@@ -5,7 +5,7 @@ useHead({
 })
 
 const counter1 = ref(0)
-const counter2 = useState('counter2', () => 0)
+const counter2 = useState<number>('counter2', () => 0)
 
 </script>
 
