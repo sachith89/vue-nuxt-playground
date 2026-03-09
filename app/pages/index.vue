@@ -35,7 +35,7 @@ const {data, pending, error} = useFetch('/api/hello', {server: false});
     <p v-if="pending">Data from API loading...</p>
     <p v-if="error">There was an error while fetching data. Error : {{error.data.message}}</p>
     <ul class="list-disc list-inside p-4">
-      <li v-for="fruit in data?.database">
+      <li v-for="fruit in data?.fruits">
         {{ fruit }}
       </li>
     </ul>
