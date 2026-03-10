@@ -2,6 +2,6 @@
 </script>
 <template>
   <div>
-    <h1>About page</h1>
+    <PageTitle>About page</PageTitle>
   </div>
 </template>

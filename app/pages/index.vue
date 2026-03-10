@@ -13,9 +13,7 @@ const {data, pending, error} = useFetch('/api/hello', {server: false});
 </script>
 
 <template>
-  <h3 class="text-2xl font-red">Welcome to home page</h3>
-  <div>
-  </div>
+  <PageTitle>Welcome to home page</PageTitle>
 
   <div>
     <p>Counter using ref() -> {{ counter1 }}. Click here to
