@@ -2,6 +2,6 @@
 </script>
 <template>
   <div>
-    <PageTitle>About page</PageTitle>
+    <PageTitle colorClass="text-red-800">About page</PageTitle>
   </div>
 </template>
