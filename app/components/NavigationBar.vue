@@ -6,5 +6,10 @@
     <ul>
       <li><NuxtLink to="/about">About</NuxtLink></li>
     </ul>
+    <ul>
+      <li>
+        <NuxtLink to="/profile/1">Profiles</NuxtLink>
+      </li>
+    </ul>
   </nav>
 </template>

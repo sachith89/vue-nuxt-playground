@@ -1,7 +1,5 @@
 <script setup lang="ts">
 
-import NavigationBar from "~/components/NavigationBar.vue";
-
 useHead({
   title: 'My cool dashboard'
 })
@@ -15,7 +13,6 @@ const {data, pending, error} = useFetch('/api/hello', {server: false});
 </script>
 
 <template>
-  <NavigationBar/>
   <h3 class="text-2xl font-red">Welcome to home page</h3>
   <div>
   </div>

@@ -2,6 +2,7 @@
 
 const profileId = useRoute().params.profileId;
 
+
 </script>
 
 <template>

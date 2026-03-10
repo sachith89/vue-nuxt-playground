@@ -1,5 +1,7 @@
 <script setup lang="ts">
 </script>
 <template>
-  <NavigationBar/>
+  <div>
+    <h1>About page</h1>
+  </div>
 </template>
