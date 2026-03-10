@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import NavigationBar from "~/components/NavigationBar.vue";
+
 useHead({
   title: 'My cool dashboard'
 })
@@ -12,11 +14,10 @@ const {data, pending, error} = useFetch('/api/hello', {server: false});
 
 </script>
 
-
 <template>
+  <NavigationBar/>
   <h3 class="text-2xl font-red">Welcome to home page</h3>
   <div>
-    <NuxtLink to="/about">About</NuxtLink>
   </div>
 
   <div>
@@ -33,9 +34,9 @@ const {data, pending, error} = useFetch('/api/hello', {server: false});
 
   <div>
     <p v-if="pending">Data from API loading...</p>
-    <p v-if="error">There was an error while fetching data. Error : {{error.data.message}}</p>
+    <p v-if="error">There was an error while fetching data. Error : {{ error.data.message }}</p>
     <ul class="list-disc list-inside p-4">
-      <li v-for="fruit in data?.fruits" :key = "fruit.id">
+      <li v-for="fruit in data?.fruits" :key="fruit.id">
         {{ fruit.name }}
       </li>
     </ul>
