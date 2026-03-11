@@ -55,7 +55,7 @@ async function submitForm() {
     return;
   }
 
-  errors.value = 'Login successful';
+  errors.value = result._data?.token ?? 'no token';
 
 }
 
