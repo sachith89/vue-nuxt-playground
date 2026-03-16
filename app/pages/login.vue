@@ -55,8 +55,11 @@ async function submitForm() {
     return;
   }
 
-  errors.value = result._data?.token ?? 'no token';
-
+  if (result._data && result._data.token) {
+    useCookie("jwt_token").value = result._data.token;
+  } else {
+    errors.value = 'Something went wrong while login';
+  }
 }
 
 const form = reactive({
@@ -67,7 +70,6 @@ const form = reactive({
 </script>
 
 <style scoped>
-@import "tailwindcss";
 @import "tailwindcss";
 
 input {
